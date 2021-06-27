@@ -1,0 +1,237 @@
+.page {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background-image: url('../../assets/img/pagebackground.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.pageContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   max-width: 545px;
+   width: 100%;
+   height: 591px;
+}
+
+@media (max-width: 1200px) {
+   .page {
+      background-image: url('../../assets/img/pagebackground1024.jpg');
+   }
+   .pageContainer {
+      height: 550px;
+   }
+}
+
+@media (max-width: 638px) {
+   .page {
+      background-image: url('../../assets/img/pagebackground375.jpg');
+   }
+   .pageContainer {
+      max-width: 343px;
+   }
+}
+
+.progressbar {
+   position: relative;
+   width: 100%;
+   padding-left: 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.progressItem {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 20px;
+}
+
+.progressItem:first-child .progress {
+   display: none;
+}
+
+.progressItem:first-child .circle {
+   left: 0;
+}
+
+.progressItem:first-child {
+   width: 20px;
+}
+
+.circle {
+   position: absolute;
+   right: -2px;
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   text-align: center;
+   z-index: 288;
+   color: #5A6543;
+   background-color: #273210;
+}
+
+.progress {
+   width: 100%;
+   height: 10px;
+   background-color: #273210;
+}
+
+@keyframes slidein {
+   from {
+      background-image: linear-gradient(to right, #BBD780 0%, #273210 100%);
+   }
+   to {
+      background-image: linear-gradient(to right, #BBD780 100%, #273210 0%);
+   }
+}
+
+@keyframes step {
+   from {
+      color: #5A6543;
+      background-color: #273210;
+   }
+   to {
+      background-color: #EAECE8;
+      color: #313F14;
+   }
+}
+
+@keyframes variant {
+   from {
+      width: 100%;
+   }
+   to {
+      width: 101%;
+   }
+}
+
+@keyframes button {
+   from {
+      width: 210px;
+   }
+   to {
+      width: 212px;
+   }
+}
+
+.toActiveStep {
+   background-color: #BBD780;
+   color: #BBD780;
+}
+
+.toActive {
+   background-color: #BBD780;
+}
+
+.toActiveStep::before {
+   content: url('../../assets/img/check.svg');
+   display: inline-block;
+}
+
+.toActiveStepProgress {
+   background-color: #BBD780;
+   display: inline-block;
+}
+
+.activeStep {
+   animation-duration: .6s;
+   animation-name: step;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+}
+
+.activeProgress {
+   animation-duration: 1s;
+   animation-name: slidein;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.content h2 {
+   font-size: 24px;
+   font-family: 'Poppins-semibold';
+   font-weight: 600;
+   color: #F1F7E6;
+}
+
+.variant {
+   width: 100%;
+   height: 48px;
+   padding-left: 24px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   margin-bottom: 16px;
+   border: none;
+   border: 1px solid #46522B;
+   border-radius: 16px;
+   background-color: rgba(241, 247, 230, 0.05);
+   font-size: 14px;
+   font-family: 'Poppins-medium';
+   color: #F1F7E6;
+}
+
+.variant:hover {
+   background-color: #F1F7E6;
+   color: #000;
+   transition: all 0.4s ease;
+   animation-duration: .3s;
+   animation-direction: alternate;
+   animation-name: variant;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+}
+
+.activeVariant {
+   background-color: #F1F7E6;
+   color: #000;
+   transition: all 0.4s ease;
+}
+
+.buttongroup {
+   width: 100%;
+   height: 72px;
+   border-top: 1px solid #f1f7e638;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.buttongroup button {
+   width: 210px;
+   height: 48px;
+   cursor: pointer;
+   border: none;
+   border: 1px solid #46522B;
+   border-radius: 90px;
+   background-color: transparent;
+   color: #F1F7E6;
+}
+
+.buttongroup button:hover {
+   background-color: #F1F7E6;
+   color: #313F14;
+   transition: all 0.4s ease;
+   animation-duration: .3s;
+   animation-name: button;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+}

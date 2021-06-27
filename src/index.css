@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url('./fonts/Poppinsbold.woff2') format('woff2'),
+       url('./fonts/Poppinsbold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-normal';
+  src: url('./fonts/Poppinsregular.woff2') format('woff2'),
+       url('./fonts/Poppinsregular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-semibold';
+  src: url('./fonts/Poppinssemibold.woff2') format('woff2'),
+       url('./fonts/Poppinssemibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-medium';
+  src: url('./fonts/Poppinsmedium.woff2') format('woff2'),
+       url('./fonts/Poppinsmedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slick-prev, .slick-next{
+  width: 42.56px !important;
+  height: 43.08px !important;
+}
+
+.slick-prev::before {
+  width: 42.56px !important;
+  height: 43.08px !important;
+  content: url('./assets/img/Frame\ 896.svg') !important;
+}
+
+.slick-next::before {
+  width: 42.56px !important;
+  height: 43.08px !important;
+  content: url('./assets/img/Frame\ 896.svg') !important;
+}
+
+.slick-next:hover::before {
+  width: 42.56px !important;
+  height: 43.08px !important;
+  content: url('./assets/img/Frame\ 894.svg') !important;
+}
+
+.slick-prev:hover::before {
+  width: 42.56px !important;
+  height: 43.08px !important;
+  content: url('./assets/img/Frame\ 894.svg') !important;
+}
+
+.slick-next {
+  right: -59px !important;
+  top: 35% !important;
+  transform-origin: center;
+    transform: rotate(180deg) !important;
+}
+
+.slick-next:hover {
+  transform-origin: center;
+    transform: rotate(360deg) !important;
+}
+.slick-prev:hover {
+  transform-origin: center;
+    transform: rotate(180deg) !important;
+}
+
+.slick-prev {
+  left: -67px !important;
+  top: 35% !important;
+  transform-origin: center;
+    transform: rotate(360deg) !important;
+}
+
+@media (max-width: 638px) {
+  .slick-next{
+    top: 185px !important;
+    right: 119px !important;
+ }
+
+  .slick-prev{
+    top: 185px !important;
+    left: 119px !important;
+ }
+}

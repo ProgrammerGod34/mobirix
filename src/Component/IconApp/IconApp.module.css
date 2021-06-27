@@ -1,0 +1,39 @@
+.app {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 262px;
+   height: 52px;
+   margin-top: 20px;
+   margin-bottom: 28px;
+   position: absolute;
+   z-index: 500;
+   border-radius: 16px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(24px);
+}
+
+.text h4 {
+   display: inline;
+   color: #EAECE8;
+}
+
+.text span {
+   color: #C1C5B9;
+}
+
+.icon {
+   width: 24px;
+   height: 24px;
+   margin-right: 8px;
+   background-image: url('../../assets/img/symbol.png');
+   background-size: contain;
+}
+
+@media (max-width: 638px) {
+   
+   .app {
+      background: transparent;
+   backdrop-filter: none;
+   }
+}
