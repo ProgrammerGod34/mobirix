@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/mobirix/static/css/main.e7c2b17c.chunk.css",
+    "main.js": "/mobirix/static/js/main.e4931561.chunk.js",
+    "main.js.map": "/mobirix/static/js/main.e4931561.chunk.js.map",
+    "runtime-main.js": "/mobirix/static/js/runtime-main.4f20a186.js",
+    "runtime-main.js.map": "/mobirix/static/js/runtime-main.4f20a186.js.map",
+    "static/css/2.07c9f0e7.chunk.css": "/mobirix/static/css/2.07c9f0e7.chunk.css",
+    "static/js/2.958f9378.chunk.js": "/mobirix/static/js/2.958f9378.chunk.js",
+    "static/js/2.958f9378.chunk.js.map": "/mobirix/static/js/2.958f9378.chunk.js.map",
+    "static/js/3.986100d0.chunk.js": "/mobirix/static/js/3.986100d0.chunk.js",
+    "static/js/3.986100d0.chunk.js.map": "/mobirix/static/js/3.986100d0.chunk.js.map",
+    "index.html": "/mobirix/index.html",
+    "static/css/2.07c9f0e7.chunk.css.map": "/mobirix/static/css/2.07c9f0e7.chunk.css.map",
+    "static/css/main.e7c2b17c.chunk.css.map": "/mobirix/static/css/main.e7c2b17c.chunk.css.map",
+    "static/js/2.958f9378.chunk.js.LICENSE.txt": "/mobirix/static/js/2.958f9378.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/mobirix/static/media/Poppinssemibold.3695a412.woff",
+    "static/media/PagesTest.module.css": "/mobirix/static/media/pagebackground375.c1de09f7.jpg",
+    "static/media/DownloadPage.module.css": "/mobirix/static/media/downloadpage375.22806ad7.jpg",
+    "static/media/Home.module.css": "/mobirix/static/media/homebackground372.a6f8a77e.jpg",
+    "static/media/slick-theme.css": "/mobirix/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f20a186.js",
+    "static/css/2.07c9f0e7.chunk.css",
+    "static/js/2.958f9378.chunk.js",
+    "static/css/main.e7c2b17c.chunk.css",
+    "static/js/main.e4931561.chunk.js"
+  ]
+}
