@@ -31,6 +31,8 @@
    margin-right: 171px;
    color: #EAECE8;
    font-size: 32px;
+   font-family: 'Poppins-bold';
+   font-weight: 100;
 }
 
 .items {
@@ -44,6 +46,7 @@
    list-style-type: none;
    margin-bottom: 16px;
    font-size: 18px;
+   font-family: 'Poppins-medium';
    color: #EAECE8;
 }
 
@@ -101,14 +104,6 @@
 }
 
 
-
-.button {
-   width: 40px;
-   height: 40px;
-   border-radius: 20px;
-   background-color: cornsilk;
-}
-
 .reviewContainer {
    width: 302px;
    height: 136px;
@@ -154,20 +149,31 @@
 
 .button {
    width: 255px;
-    height: 48px;
-    background-color: #77AF00;
-    border-radius: 50px;
-    color: #F1F7E6;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Poppins-semibold';
-    text-align: center;
+   height: 48px;
+   background-color: #77AF00;
+   border-radius: 50px;
+   border:none;
+   color: #F1F7E6;
+   font-size: 16px;
+   font-weight: 600;
+   font-family: 'Poppins-semibold';
+   text-align: center;
+}
+
+.button:hover {
+   cursor: pointer;
+   background-color: #6c9b08;
+}
+
+.button:active {
+   background-color: #5c830a;
 }
 
 .link a {
    text-decoration-style: dotted;
    color: #EAECE8;
    display: inline-block;
+   font-family: 'Poppins-normal';
 }
 
 .link a:nth-child(1) {
@@ -178,7 +184,7 @@
    margin-left: 32px;
 }
 
-.link{
+.link {
    color: #EAECE8;
 }
 
@@ -186,56 +192,53 @@
    .pageContainer {
       max-width: 853.17px;
       height: 700px;
+      margin-top: 156px;
    }
    .downloadPage {
       background-image: url('../../assets/img/downloadpage1024.jpg');
    }
-
    .sliders {
       max-width: 716px;
-     }
-   
+   }
    .sliderImg {
       max-width: 716px;
    }
-
    .items li {
       margin-bottom: 19px;
    }
 }
 
-@media (max-width: 638px) {
+@media (max-width: 846px) {
    .pageContainer {
+      margin-top: 100px;
       max-width: 343px;
       height: 750px;
    }
    .downloadPage {
       background-image: url('../../assets/img/downloadpage375.jpg');
    }
-
    .items li {
       margin-bottom: 16px;
    }
-
    .sliders {
       max-width: 343px;
-     }
-   
+   }
    .sliderImg {
       max-width: 343px;
    }
-
    .review {
       max-width: 343px;
    }
-
    .info h2 {
       margin-right: 0;
    }
-
    .button {
       margin-top: 63px;
    }
-   
 }
 
+@media (max-height: 854px) {
+   .downloadPage {
+      height: auto;
+   }
+}

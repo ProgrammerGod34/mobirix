@@ -57,6 +57,17 @@
    text-align: center;
 }
 
+.content button:hover {
+   cursor: pointer;
+   transition: all 0.1s ease;
+   background-color: #6c9b08;
+}
+
+.content button:active {
+   transition: all 0.1s ease;
+   background-color: #5c830a;
+}
+
 @media (max-width: 1200px) {
    .homePage {
       background-image: url('../../assets/img/homebackground1024.jpg');

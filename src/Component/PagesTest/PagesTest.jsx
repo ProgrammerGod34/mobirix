@@ -2,13 +2,13 @@ import React from 'react'
 import style from './PagesTest.module.css'
 import Step from './Step/Step'
 import data from '../../data.json'
-import {connect} from 'react-redux'
-import {getInterview, getActiveStep} from '../../Redux/page-reducer'
+import { connect } from 'react-redux'
+import { getInterview, getActiveStep } from '../../Redux/page-reducer'
 import { useHistory } from "react-router-dom";
 
 
 
-let  PagesTest = (props) => {
+let PagesTest = (props) => {
 
   const history = useHistory();
 
@@ -20,7 +20,7 @@ let  PagesTest = (props) => {
   const [activeStep, setActiveStep] = React.useState(1);
   const [activeVariant, setActiveVariant] = React.useState(null)
 
-  
+
 
   const handleRememberResult = (number) => {
     setActiveVariant(number)
@@ -38,7 +38,7 @@ let  PagesTest = (props) => {
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
     setActiveVariant(null)
-    if(activeStep === props.listInterview.length) {
+    if (activeStep === props.listInterview.length) {
       history.push("/downloadpage");
     }
 
@@ -69,7 +69,7 @@ let  PagesTest = (props) => {
 }
 
 let mapStateToProps = (state) => ({
-    listInterview: state.page.listInterview
+  listInterview: state.page.listInterview
 })
 
-export default connect(mapStateToProps, {getInterview, getActiveStep})(PagesTest)
+export default connect(mapStateToProps, { getInterview, getActiveStep })(PagesTest)

@@ -19,24 +19,6 @@
    height: 591px;
 }
 
-@media (max-width: 1200px) {
-   .page {
-      background-image: url('../../assets/img/pagebackground1024.jpg');
-   }
-   .pageContainer {
-      height: 550px;
-   }
-}
-
-@media (max-width: 638px) {
-   .page {
-      background-image: url('../../assets/img/pagebackground375.jpg');
-   }
-   .pageContainer {
-      max-width: 343px;
-   }
-}
-
 .progressbar {
    position: relative;
    width: 100%;
@@ -199,6 +181,11 @@
    animation-timing-function: ease-in-out;
 }
 
+.variant:active {
+   transition: all 0.1s ease;
+   background-color: #b8b8b8;
+}
+
 .activeVariant {
    background-color: #F1F7E6;
    color: #000;
@@ -229,9 +216,39 @@
    background-color: #F1F7E6;
    color: #313F14;
    transition: all 0.4s ease;
-   animation-duration: .3s;
-   animation-name: button;
-   animation-iteration-count: 1;
-   animation-fill-mode: forwards;
-   animation-timing-function: ease-in-out;
+}
+
+.buttongroup button:active {
+   transition: all 0.1s ease;
+   background-color: #b8b8b8;
+}
+
+@media (max-width: 1200px) {
+   .page {
+      background-image: url('../../assets/img/pagebackground1024.jpg');
+   }
+   .pageContainer {
+      height: 550px;
+   }
+}
+
+@media (max-width: 638px) {
+   .page {
+      background-image: url('../../assets/img/pagebackground375.jpg');
+   }
+   .pageContainer {
+      max-width: 343px;
+   }
+}
+
+@media (max-height: 758px) {
+   .pageContainer {
+      margin-top: 100px;
+   }
+}
+
+@media (max-height: 652px) {
+   .page {
+      height: auto;
+   }
 }
