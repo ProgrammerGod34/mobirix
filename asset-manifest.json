@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mobirix/static/css/main.d443273f.chunk.css",
+    "main.css": "/mobirix/static/css/main.4b8d0c8a.chunk.css",
     "main.js": "/mobirix/static/js/main.890e1a95.chunk.js",
     "main.js.map": "/mobirix/static/js/main.890e1a95.chunk.js.map",
     "runtime-main.js": "/mobirix/static/js/runtime-main.fea787d1.js",
@@ -12,7 +12,7 @@
     "static/js/3.61760a15.chunk.js.map": "/mobirix/static/js/3.61760a15.chunk.js.map",
     "index.html": "/mobirix/index.html",
     "static/css/2.07c9f0e7.chunk.css.map": "/mobirix/static/css/2.07c9f0e7.chunk.css.map",
-    "static/css/main.d443273f.chunk.css.map": "/mobirix/static/css/main.d443273f.chunk.css.map",
+    "static/css/main.4b8d0c8a.chunk.css.map": "/mobirix/static/css/main.4b8d0c8a.chunk.css.map",
     "static/js/2.29836bd1.chunk.js.LICENSE.txt": "/mobirix/static/js/2.29836bd1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/mobirix/static/media/Poppinssemibold.3695a412.woff",
     "static/media/PagesTest.module.css": "/mobirix/static/media/pagebackground375.c1de09f7.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.fea787d1.js",
     "static/css/2.07c9f0e7.chunk.css",
     "static/js/2.29836bd1.chunk.js",
-    "static/css/main.d443273f.chunk.css",
+    "static/css/main.4b8d0c8a.chunk.css",
     "static/js/main.890e1a95.chunk.js"
   ]
 }
